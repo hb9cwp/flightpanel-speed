@@ -14,7 +14,7 @@ Its native resolution and default width & height are 300 px.
 
 The Custom Element accepts attributes `width`, `height`, and `speed`.
 It watches `speed`, and adjusts the hand as it changes.
-See demo.html for example.
+See example in [demo.html](demo.html) .
 
 This Custom Element is derived from Polymer's 
 [seed-element](https://github.com/PolymerLabs/seed-element)
