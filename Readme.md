@@ -4,7 +4,10 @@ Re-usable Speed indicator Web Component refactored from flightSimPanels as
 Custom Element in Polymer.
 
 `<flightPanel-speed width=200 height=200 speed=25></flightPanel-speed>`
-[Speed Indicator 200 x 200 px](/speedIndicator.png)
+
+<p align="center">
+  <img src="speedIndicator.png?raw=true" alt="Speed Indicator 200 x 200 px"/>
+</p>
 
 This Custom Element is derived from Polymer's 
 [seed-element](https://github.com/PolymerLabs/seed-element)
