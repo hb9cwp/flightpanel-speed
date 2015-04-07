@@ -3,9 +3,7 @@
 Re-usable Speed indicator Web Component refactored from flightSimPanels as 
 Custom Element in Polymer.
 
-<p align="center">
- `<flightPanel-speed width=200 height=200 speed=25></flightPanel-speed>`
-</p>
+`<flightPanel-speed width=200 height=200 speed=25></flightPanel-speed>`
 
 <p align="center">
   <img src="speedIndicator.png?raw=true" alt="Speed Indicator 200 x 200 px"/>
