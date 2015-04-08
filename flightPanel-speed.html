@@ -1,5 +1,13 @@
 <link rel="import" href="./bower_components/polymer/polymer.html">
 
+<!--
+The `flightPanel-speed` element renders an analog Speed indicator. 
+
+@element flightPanel-speed
+@status alpha
+@homepage https://googlewebcomponents.github.io/google-chart
+-->
+
 <polymer-element name="flightPanel-speed" attributes="width height speed">
 
   <template>
@@ -20,10 +28,40 @@
   <script>
     'use strict';
     Polymer({
+      /**
+       * Changes `width` of the indicator from its default (in px).
+       *
+       * @attribute width
+       * @type number
+       * @default 300
+       */
       width: 300,
+
+      /**
+       * Changes `height` of the indicator from its default (in px).
+       *
+       * @attribute height
+       * @type number
+       * @default 300
+       */
       height: 300,
+      
+      /**
+       * The hand tracks the `speed` (in kts).
+       *
+       * @attribute speed
+       * @type number
+       * @default 0
+       */
       speed: 0,
 
+      /**
+       * The `author` attribute sets an initial author
+       *
+       * @attribute author
+       * @type string
+       * @default 'Rolf Sommerhalder'
+       */
       author: 'Rolf Sommerhalder',
       
       min: 0,
