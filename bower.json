@@ -1,0 +1,30 @@
+{
+  "name": "flightPanel-speed",
+  "version": "0.1",
+  "authors": [
+    "Rolf Sommerhalder <rolf.sommerhalder@alumni.ethz.ch>"
+  ],
+  "description": "Element providing solution to no problem in particular.",
+  "keywords": [
+    "web-component",
+    "web-components",
+    "Custom Element",
+    "polymer",
+    "flightPanel",
+    "SolarImpulse",
+    "Si2"
+  ],
+  "main": "flightPanel-speed.html",
+  "license": "BSD",
+  "homepage": "https://github.com/hb9cwp/flightPanel-speed/",
+  "ignore": [
+    "/.*",
+    "/tests/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^0.5.4"
+  },
+  "devDependencies": {
+    "web-component-tester": "*"
+  }
+}

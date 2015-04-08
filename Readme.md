@@ -1,7 +1,8 @@
 #flightPanel-speed
 
-Re-usable Speed indicator Web Component refactored from flightSimPanels as 
-Custom Element in Polymer.
+Re-usable Speed indicator Web Component refactored from 
+[flightSimPanels](https://github.com/dmolin/flightSimPanels)
+as Custom Element in Polymer.
 
 `<flightPanel-speed width=200 height=200 speed=25></flightPanel-speed>`
 
@@ -12,7 +13,7 @@ Custom Element in Polymer.
 The Speed indicator is scaled to the top speed 49 kts of SolarImpulse2.
 Its native resolution and default width & height are 300 px.
 
-The Custom Element accepts attributes `width`, `height`, and `speed`.
+The Custom Element accepts attributes `width`, `height` (in px), and `speed` (in kts).
 It watches `speed`, and adjusts the hand as it changes.
 See example in [demo.html](demo.html) .
 
