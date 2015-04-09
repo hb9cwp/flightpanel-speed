@@ -1,15 +1,13 @@
-<!-- only required with Polymer Designer -->
-<x-meta id="flightPanel-speed" label="speed" group="flightPanel">
+<!-- only required with Polymer Designer, see
+ https://github.com/Polymer/designer/tree/designer1#adding-your-own-components-to-designer
+-->
+<x-meta id="flightPanel-speed" label="Speed" group="flightPanel" hideSubtree>
 
   <template>
     <flightPanel-speed></flightPanel-speed>
   </template>
 
-  <template id="imports">
-    <link rel="import" href="flightPanel-speed.html">
-  </template>
-
-  <property name="widht"
+  <property name="width"
     kind="number">
   </property>
 
@@ -20,5 +18,10 @@
   <property name="speed"
     kind="number">
   </property>
+
+  <!-- Make sure you put your element import last! -->
+  <template id="imports">
+    <link rel="import" href="flightPanel-speed.html">
+  </template>
 
 </x-meta>
