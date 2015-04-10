@@ -1,5 +1,5 @@
 {
-  "name": "flightPanel-speed",
+  "name": "flightpanel-speed",
   "version": "0.1",
   "authors": [
     "Rolf Sommerhalder <rolf.sommerhalder@alumni.ethz.ch>"
@@ -10,13 +10,13 @@
     "web-components",
     "Custom Element",
     "polymer",
-    "flightPanel",
+    "flightpanel",
     "SolarImpulse",
     "Si2"
   ],
-  "main": "flightPanel-speed.html",
+  "main": "flightpanel-speed.html",
   "license": "BSD",
-  "homepage": "https://github.com/hb9cwp/flightPanel-speed/",
+  "homepage": "https://github.com/hb9cwp/flightpanel-speed/",
   "ignore": [
     "/.*",
     "/tests/"
