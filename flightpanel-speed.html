@@ -85,7 +85,8 @@ The `flightpanel-speed` element renders an analog Speed indicator.
         dial.onload = function(){
           ctx0.drawImage(dial,0,0,that.width,that.height);  // scale to canvas size
         }
-        dial.src= "../flightpanel-speed/speedDial.png"
+        //dial.src= "../flightpanel-speed/speedDial.png"
+        dial.src= "./bower_components/flightpanel-speed/speedDial.png"
         
         that.hand.onload = function() {
           /* Variant A: save/restore */
@@ -111,7 +112,8 @@ The `flightpanel-speed` element renders an analog Speed indicator.
             that.ctx1.drawImage(that.hand,0,0,that.width,that.height) // scale to canvas size
             */
         }
-        that.hand.src= "../flightpanel-speed/speedHand.png"
+        //that.hand.src= "../flightpanel-speed/speedHand.png"
+        that.hand.src= "./bower_components/flightpanel-speed/speedHand.png"
       },
       
       speedChanged: function () {
