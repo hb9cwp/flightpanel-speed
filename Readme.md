@@ -7,7 +7,7 @@ using Polymer library with Custom Elements.
 `<flightpanel-speed id="si2speed" width=200 height=200 speed=25></flightpanel-speed>`
 
 <p align="center">
-  <img src="speedIndicator.png?raw=true" alt="Speed Indicator 200 x 200 px"/>
+  <img src="./speedIndicator.png" alt="Speed Indicator 200 x 200 px"/>
 </p>
 
 The Speed indicator is scaled to the top speed 49 kts of SolarImpulse2.
