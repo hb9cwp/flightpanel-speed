@@ -1,14 +1,14 @@
 <link rel="import" href="../polymer/polymer.html">
 
 <!--
-The `flightpanel-speed` element renders an analog Speed indicator. 
+The `flightpanel-speed` element renders an analog Speed indicator.
 
 @element flightpanel-speed
 @status alpha
 @homepage https://github.com/hb9cwp/flightpanel-speed
 -->
 
-<polymer-element name="flightpanel-speed" attributes="width height speed">
+<dom-module id="flightpanel-speed">
 
   <template>
     <link rel="stylesheet" href="flightpanel-speed.css">
@@ -28,49 +28,52 @@ The `flightpanel-speed` element renders an analog Speed indicator.
   <script>
     'use strict';
     Polymer({
-      /**
-       * Changes `width` of the indicator from its default (in px).
-       *
-       * @attribute width
-       * @type number
-       * @default 300
-       */
-      width: 300,
+      is: "flightpanel-speed",
+      properties: {
+        /**
+         * Changes `width` of the indicator from its default (in px).
+         *
+         * @attribute width
+         * @type number
+         * @default 300
+         */
+        width: 300,
 
-      /**
-       * Changes `height` of the indicator from its default (in px).
-       *
-       * @attribute height
-       * @type number
-       * @default 300
-       */
-      height: 300,
-      
-      /**
-       * The hand tracks the `speed` (in kts).
-       *
-       * @attribute speed
-       * @type number
-       * @default 0
-       */
-      speed: 0,
+        /**
+         * Changes `height` of the indicator from its default (in px).
+         *
+         * @attribute height
+         * @type number
+         * @default 300
+         */
+        height: 300,
+
+        /**
+         * The hand tracks the `speed` (in kts).
+         *
+         * @attribute speed
+         * @type number
+         * @default 0
+         */
+        speed: 0,
+      },
 
       min: 0,
       max: 0,
       angles: [],
 
       created: function() {
-        // interpolation etc. 
+        // interpolation etc.
         setup(this);
       },
-      
+
       ctx1: null,
       hand: null,
-      
+
       // on ready, not on created, unlike shown in some examples!
       ready: function () {
         var that= this
-        
+
         // using label ID
         var canvas0 = this.$.canvas0;
         var canvas1 = this.$.canvas1;
@@ -78,16 +81,16 @@ The `flightpanel-speed` element renders an analog Speed indicator.
         //var canvas= this.shadowRoot.querySelector('.canvasClass')
         var ctx0 = canvas0.getContext('2d')
         that.ctx1 = canvas1.getContext('2d')
-    
+
         var dial= new Image()
         that.hand= new Image()
-        
+
         dial.onload = function(){
           ctx0.drawImage(dial,0,0,that.width,that.height);  // scale to canvas size
         }
         //dial.src= "../flightpanel-speed/speedDial.png"
-        dial.src= "./bower_components/flightpanel-speed/speedDial.png"
-        
+        dial.src= "./speedDial.png"
+
         that.hand.onload = function() {
           /* Variant A: save/restore */
             // 0. save context, e.g. offset etc.
@@ -113,9 +116,9 @@ The `flightpanel-speed` element renders an analog Speed indicator.
             */
         }
         //that.hand.src= "../flightpanel-speed/speedHand.png"
-        that.hand.src= "./bower_components/flightpanel-speed/speedHand.png"
+        that.hand.src= "./speedHand.png"
       },
-      
+
       speedChanged: function () {
 			  var speed = Math.round(this.speed)
     		if (speed < this.min) {
@@ -139,10 +142,10 @@ The `flightpanel-speed` element renders an analog Speed indicator.
           this.ctx1.drawImage(this.hand,0,0,this.width,this.height)  // scale to canvas size
           */
       }
-      
-      
+
+
     });
-    
+
     function setup(that) {
       // from (scale modified for Si2)
       //  https://github.com/dmolin/flightSimPanels/blob/master/src/services/measures/speed/client/speed.js
@@ -170,11 +173,11 @@ The `flightpanel-speed` element renders an analog Speed indicator.
       },
       zeroAngle = 0,
       angles = [];
-      
+
       var keys = Object.keys(interp).sort(function(a, b) {
         return parseInt(a, 10) - parseInt(b, 10);
       });
-      
+
       var min = parseInt(keys[0], 10),
         max = parseInt(keys[keys.length - 1], 10);
 
@@ -200,7 +203,5 @@ The `flightpanel-speed` element renders an analog Speed indicator.
       that.angles = angles;
       console.log("setup() done!")
     }
-
   </script>
-
-</polymer-element>
+</dom-module>

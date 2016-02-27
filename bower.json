@@ -1,6 +1,6 @@
 {
   "name": "flightpanel-speed",
-  "version": "0.1",
+  "version": "1.0",
   "authors": [
     "Rolf Sommerhalder <rolf.sommerhalder@alumni.ethz.ch>"
   ],
@@ -22,7 +22,7 @@
     "/tests/"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#^0.5.4"
+    "polymer": "Polymer/polymer#^1.2.0"
   },
   "devDependencies": {
     "web-component-tester": "*"

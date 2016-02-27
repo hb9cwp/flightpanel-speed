@@ -1,10 +1,10 @@
 #flightpanel-speed
 
-Re-usable Speed indicator Web Component refactored from 
+Re-usable Speed indicator Web Component refactored from
 [flightSimPanels](https://github.com/dmolin/flightSimPanels)
 as Custom Element in Polymer.
 
-`<flightpanel-speed width=200 height=200 speed=25></flightpanel-speed>`
+`<flightpanel-speed id="si2speed" width=200 height=200 speed=25></flightpanel-speed>`
 
 <p align="center">
   <img src="speedIndicator.png?raw=true" alt="Speed Indicator 200 x 200 px"/>
@@ -17,9 +17,9 @@ The Custom Element accepts attributes `width`, `height` (in px), and `speed` (in
 It watches `speed`, and adjusts the hand as it changes.
 See example in [demo.html](demo.html) .
 
-This Custom Element is derived from Polymer's 
+This Custom Element is derived from Polymer's
 [seed-element](https://github.com/PolymerLabs/seed-element)
-according to 
-["Creating reusable elements:
- How to publish and deploy reusable Polymer elements on GitHub"]
-(http://www.polymer-project.org/docs/start/reusableelements.html) .
+according to
+["Create a reusable element:
+ Publish reusable Polymer elements on GitHub"]
+https://www.polymer-project.org/1.0/docs/start/reusableelements.html .
