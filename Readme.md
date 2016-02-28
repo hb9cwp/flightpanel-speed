@@ -1,8 +1,10 @@
 #flightpanel-speed
 
-Re-usable Speed indicator Web Component refactored from
+[![Build Status](https://travis-ci.org/hb9cwp/flightpanel-test.svg?branch=master)](https://travis-ci.org/hb9cwp/flightpanel-test)
+
+Re-usable Speed indicator Custom Element refactored from
 [flightSimPanels](https://github.com/dmolin/flightSimPanels)
-using Polymer library with Custom Elements.
+using Polymer library with Web Component.
 
 `<flightpanel-speed id="si2speed" width=200 height=200 speed=25></flightpanel-speed>`
 
