@@ -1,6 +1,4 @@
-#flightpanel-speed
-
-[![Build Status](https://travis-ci.org/hb9cwp/flightpanel-test.svg?branch=master)](https://travis-ci.org/hb9cwp/flightpanel-test)
+#flightpanel-speed [![Build Status](https://travis-ci.org/hb9cwp/flightpanel-test.svg?branch=master)](https://travis-ci.org/hb9cwp/flightpanel-test)
 
 Re-usable Speed indicator Custom Element refactored from
 [flightSimPanels](https://github.com/dmolin/flightSimPanels)
