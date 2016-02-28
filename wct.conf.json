@@ -5,7 +5,7 @@
         {
           "browserName": "chrome",
           "platform": "android",
-          "version": "5"
+          "version": "latest"
         },
         {
           "browserName": "safari",
