@@ -1,10 +1,10 @@
 {
   "name": "flightpanel-speed",
-  "version": "1.0",
+  "version": "1.0.1",
   "authors": [
     "Rolf Sommerhalder <rolf.sommerhalder@alumni.ethz.ch>"
   ],
-  "description": "Element providing solution to no problem in particular.",
+  "description": "Speed indicator for SolarImpulse.",
   "keywords": [
     "web-component",
     "web-components",
@@ -22,9 +22,10 @@
     "/tests/"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.0"
+    "polymer": "Polymer/polymer#^1.2.0"
   },
   "devDependencies": {
-    "web-component-tester": "*"
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "web-component-tester": "^4.0.0"
   }
 }
