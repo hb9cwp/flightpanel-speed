@@ -55,8 +55,11 @@ The `flightpanel-speed` element renders an analog Speed indicator.
          * @type number
          * @default 0
          */
-        speed: 0,
-      },
+        speed: {
+          type: Number,
+          notify: true,
+          observer: 'speedChanged',
+        },
 
       min: 0,
       max: 0,
